@@ -1,9 +1,0 @@
-{
-  "AWSEBDockerrunVersion": "1",
-  "Logging": "/tmp/sample-app",
-  "Image": {
-  	"Update": "false"
-  },
-  "Volumes": [],
-  "Command": "https://www.youtube.com/watch?v=4yP0WcATnXo"
-}
