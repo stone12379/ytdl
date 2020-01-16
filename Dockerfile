@@ -7,7 +7,7 @@ RUN set -xe \
                           aria2 \
     && pip3 install youtube-dl
 
-RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' 'https://www.youtube.com/watch?v=Kr1fmKVY3cA'
+RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' 'https://www.youtube.com/watch?v=lIvrIKaNCRE'
 
 ENTRYPOINT [ "sh" ]
 
