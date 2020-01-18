@@ -9,6 +9,8 @@ RUN set -xe \
                           aria2 \
     && pip3 install youtube-dl
 
-RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub  -i 'https://www.youtube.com/playlist?list=PL8HAkqKX065DygZJKmkmAly8t2ymxjFyO'; exit 0
+WORKDIR /data
+
+RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub  -i 'https://www.youtube.com/watch?v=9etxRT1hq14'; exit 0
 
 
