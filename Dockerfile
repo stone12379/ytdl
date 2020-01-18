@@ -1,5 +1,7 @@
 FROM alpine
 
+MAINTAINER Joe Song
+
 RUN set -xe \
     && apk add --no-cache ffmpeg \
                           openssl \
