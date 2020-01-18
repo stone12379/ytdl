@@ -7,6 +7,8 @@ RUN set -xe \
                           aria2 \
     && pip3 install youtube-dl
 
-RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' 'https://www.youtube.com/playlist?list=PL8HAkqKX065DygZJKmkmAly8t2ymxjFyO'
+RUN sudo -H pip install --upgrade youtube-dl
+
+RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub 'https://www.youtube.com/playlist?list=PL8HAkqKX065DygZJKmkmAly8t2ymxjFyO'
 
 
