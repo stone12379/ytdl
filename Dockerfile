@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER Joe Song
+MAINTAINER Jie Song
 
 RUN set -xe \
     && apk add --no-cache ffmpeg \
