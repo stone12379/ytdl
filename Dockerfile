@@ -3,11 +3,12 @@ FROM alpine
 MAINTAINER Jie Song 168
 
 RUN set -xe \
+    && apk update \
     && apk add --no-cache ffmpeg \
                           openssl \
                           python3 \
                           aria2 \
-                          py3-setuptools \
+                          py-pip \
     && pip3 install youtube-dl
 
 WORKDIR /data
