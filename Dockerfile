@@ -7,6 +7,7 @@ RUN set -xe \
                           openssl \
                           python3 \
                           aria2 \
+                          py3-setuptools \
     && pip install youtube-dl
 
 WORKDIR /data
