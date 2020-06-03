@@ -8,7 +8,7 @@ RUN set -xe \
                           python3 \
                           aria2 \
                           py3-setuptools \
-    && pip install youtube-dl
+    && pip3 install youtube-dl
 
 WORKDIR /data
 
