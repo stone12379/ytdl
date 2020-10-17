@@ -1,7 +1,5 @@
 FROM alpine
 
-MAINTAINER Jie Song 168
-
 RUN set -xe \
     && apk update \
     && apk add --no-cache ffmpeg \
@@ -13,6 +11,6 @@ RUN set -xe \
 
 WORKDIR /data
 
-RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub  -i 'https://www.youtube.com/watch?v=gFNWWIe5QpM&t=905s'; exit 0
+RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub  -i 'https://www.youtube.com/watch?v=rVOUq78FlAg'; exit 0
 
 
