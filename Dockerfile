@@ -11,5 +11,4 @@ RUN set -xe \
 
 WORKDIR /data
 
-RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub  -i 'https://www.youtube.com/watch?v=lm-PuRXepxE'; exit 0
-# https://www.youtube.com/watch?v=lm-PuRXepxE 隐士
+RUN youtube-dl -o '%(playlist)s-%(playlist_index)s-%(title)s.%(ext)s' --write-auto-sub  -i 'https://www.youtube.com/watch?v=cZpMQBLbnVM&list=PLYPP1-8uH9c5MMePveGH6iW9DRW-9_0Tp'; exit 0
